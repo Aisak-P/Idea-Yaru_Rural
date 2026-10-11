@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#223581" />
+    <meta
+      name="description"
+      content="Formulario de orientación sobre carga de cuidado y disponibilidad para Yarú Rural."
+    />
+    <title>Mi carga de cuidado · Yarú Rural</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-lockup" href="#inicio" aria-label="Yarú Rural y Fundación WWB Colombia">
+        <img src="./assets/logo-fundacion-wwb.png" alt="Fundación WWB Colombia" />
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-program">Yarú Rural</span>
+      </a>
+      <span class="header-badge">Ruta de bienestar</span>
+    </header>
+
+    <main id="app" class="page-shell">
+      <section id="inicio" class="intro-panel" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">YARÚ RURAL · FUNDACIÓN WWB COLOMBIA</p>
+          <h1 id="page-title">Conoce tu carga de cuidado</h1>
+          <p class="intro-text">
+            Responde estas preguntas sobre tu tiempo, tus recorridos y el apoyo que tienes en casa.
+            Al final recibirás una orientación para saber qué ajustes pueden ayudarte a continuar.
+          </p>
+          <div class="trust-row" aria-label="Características del formulario">
+            <span><strong>8</strong> preguntas</span>
+            <span><strong>3</strong> minutos</span>
+            <span>Resultado privado</span>
+          </div>
+        </div>
+        <div class="intro-shape" aria-hidden="true">
+          <span class="shape-orbit orbit-one"></span>
+          <span class="shape-orbit orbit-two"></span>
+          <span class="shape-sun"></span>
+          <span class="shape-leaf leaf-one"></span>
+          <span class="shape-leaf leaf-two"></span>
+        </div>
+      </section>
+
+      <section class="form-card" aria-labelledby="form-title">
+        <div class="form-heading">
+          <div>
+            <p class="section-kicker">Tu punto de partida</p>
+            <h2 id="form-title">Cuéntanos sobre tu día</h2>
+          </div>
+          <div class="progress-copy" aria-live="polite">
+            <span id="step-count">Pregunta 1 de 8</span>
+            <span id="progress-percent">13%</span>
+          </div>
+        </div>
+
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-bar" class="progress-bar" style="width: 12.5%"></div>
+        </div>
+
+        <form id="load-form" novalidate>
+          <fieldset class="form-step is-active" data-step="0">
+            <legend>En un día habitual, ¿cuántas horas dedicas al cuidado, los oficios del hogar y las tareas de la finca?</legend>
+            <p class="question-help">Piensa en un día completo, desde que comienzas hasta que puedes descansar.</p>
+            <div class="choice-grid">
+              <label class="choice-card">
+                <input type="radio" name="careHours" value="2" />
+                <span class="choice-mark">01</span>
+                <span class="choice-text"><strong>Menos de 4 horas</strong><small>Hay tiempo para otras actividades.</small></span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="careHours" value="5" />
+                <span class="choice-mark">02</span>
+                <span class="choice-text"><strong>Entre 4 y 6 horas</strong><small>El día se siente bastante ocupado.</small></span>
+              </label>
+              <label class="choice-card">
+                <input type="radio" name="careHours" value="8" />
+                <span class="choice-mark">03</span>
+                <span class="choice-text"><strong>Más de 6 horas</strong><small>La mayor parte del día está dedicada al cuidado.</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="1">
+            <legend>¿Qué tareas hacen parte de tu día?</legend>
+            <p class="question-help">Puedes elegir varias. Esto nos ayuda a reconocer todo lo que sostienes.</p>
+            <div class="choice-grid choice-grid--two">
+              <label class="choice-card choice-card--compact"><input type="checkbox" name="activities" value="alimentacion" /><span class="choice-icon">✦</span><span class="choice-text"><strong>Alimentación</strong><small>Cocinar, servir y lavar.</small></span></label>
+              <label class="choice-card choice-card--compact"><input type="checkbox" name="activities" value="hogar" /><span class="choice-icon">⌂</span><span class="choice-text"><strong>Oficios del hogar</strong><small>Limpiar, reparar y organizar.</small></span></label>
+              <label class="choice-card choice-card--compact"><input type="checkbox" name="activities" value="ropa" /><span class="choice-icon">◌</span><span class="choice-text"><strong>Ropa y calzado</strong><small>Lavar, planchar o reparar.</small></span></label>
+              <label class="choice-card choice-card--compact"><input type="checkbox" name="activities" value="personas" /><span class="choice-icon">◎</span><span class="choice-text"><strong>Cuidado de personas</strong><small>Niñas, niños, mayores o enfermos.</small></span></label>
+              <label class="choice-card choice-card--compact"><input type="checkbox" name="activities" value="finca" /><span class="choice-icon">✣</span><span class="choice-text"><strong>Finca y animales</strong><small>Labores productivas y cuidado animal.</small></span></label>
+              <label class="choice-card choice-card--compact"><input type="checkbox" name="activities" value="agua-lena" /><span class="choice-icon">≈</span><span class="choice-text"><strong>Agua o leña</strong><small>Acarreo y preparación.</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="2">
+            <legend>¿Cuánto tardas en llegar desde tu casa al punto de formación?</legend>
+            <p class="question-help">Cuenta solo el trayecto de ida.</p>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="travelMinutes" value="10" /><span class="choice-mark">01</span><span class="choice-text"><strong>Menos de 30 minutos</strong><small>El recorrido es corto.</small></span></label>
+              <label class="choice-card"><input type="radio" name="travelMinutes" value="35" /><span class="choice-mark">02</span><span class="choice-text"><strong>Entre 30 y 45 minutos</strong><small>Necesitas organizar bien tu salida.</small></span></label>
+              <label class="choice-card"><input type="radio" name="travelMinutes" value="50" /><span class="choice-mark">03</span><span class="choice-text"><strong>Más de 45 minutos</strong><small>El desplazamiento pesa en tu jornada.</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="3">
+            <legend>¿Cómo es el transporte que usas para llegar?</legend>
+            <p class="question-help">Elige la opción que más se parece a tu recorrido habitual.</p>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="transport" value="available" /><span class="choice-mark">01</span><span class="choice-text"><strong>Disponible y predecible</strong><small>Puedes contar con él.</small></span></label>
+              <label class="choice-card"><input type="radio" name="transport" value="occasional" /><span class="choice-mark">02</span><span class="choice-text"><strong>Funciona algunas veces</strong><small>Hay que esperar o coordinar.</small></span></label>
+              <label class="choice-card"><input type="radio" name="transport" value="irregular" /><span class="choice-mark">03</span><span class="choice-text"><strong>Escaso o irregular</strong><small>A veces debes caminar o cambiar el plan.</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="4">
+            <legend>Cuando asistes a clase, ¿cuentas con alguien que releve tus tareas?</legend>
+            <p class="question-help">Piensa en quién puede ayudarte con el cuidado o la casa mientras estás fuera.</p>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="support" value="reliable" /><span class="choice-mark">01</span><span class="choice-text"><strong>Sí, de manera estable</strong><small>Hay una persona o red disponible.</small></span></label>
+              <label class="choice-card"><input type="radio" name="support" value="partial" /><span class="choice-mark">02</span><span class="choice-text"><strong>A veces</strong><small>El apoyo depende del día.</small></span></label>
+              <label class="choice-card"><input type="radio" name="support" value="none" /><span class="choice-mark">03</span><span class="choice-text"><strong>No cuento con relevo</strong><small>Debo dejar todo listo o hacerlo al regresar.</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="5">
+            <legend>¿Cómo estás llegando físicamente a tus jornadas?</legend>
+            <p class="question-help">Considera tu descanso de la noche y el cansancio acumulado.</p>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="rest" value="good" /><span class="choice-mark">01</span><span class="choice-text"><strong>Descansada</strong><small>Duermo y recupero lo necesario.</small></span></label>
+              <label class="choice-card"><input type="radio" name="rest" value="tired" /><span class="choice-mark">02</span><span class="choice-text"><strong>Con algo de cansancio</strong><small>Hay días en que me cuesta recuperarme.</small></span></label>
+              <label class="choice-card"><input type="radio" name="rest" value="insufficient" /><span class="choice-mark">03</span><span class="choice-text"><strong>Muy agotada</strong><small>Duermo poco o no logro recuperarme.</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="6">
+            <legend>Durante el día, ¿tienes tiempo para comer con calma y descansar un momento?</legend>
+            <p class="question-help">También cuenta tener al menos unos minutos para ti.</p>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="selfCare" value="enough" /><span class="choice-mark">01</span><span class="choice-text"><strong>Sí, casi todos los días</strong><small>Puedo hacer una pausa.</small></span></label>
+              <label class="choice-card"><input type="radio" name="selfCare" value="little" /><span class="choice-mark">02</span><span class="choice-text"><strong>Solo algunos días</strong><small>Las pausas dependen de la carga.</small></span></label>
+              <label class="choice-card"><input type="radio" name="selfCare" value="none" /><span class="choice-mark">03</span><span class="choice-text"><strong>Casi nunca</strong><small>No tengo tiempo propio.</small></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="7">
+            <legend>¿Qué tanto se cruzan las clases con labores obligatorias de tu hogar o finca?</legend>
+            <p class="question-help">Por ejemplo: ordeño, cosecha, mercado, cuidado o preparación de alimentos.</p>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="scheduleConflict" value="low" /><span class="choice-mark">01</span><span class="choice-text"><strong>Casi nunca</strong><small>Puedo organizarme para asistir.</small></span></label>
+              <label class="choice-card"><input type="radio" name="scheduleConflict" value="medium" /><span class="choice-mark">02</span><span class="choice-text"><strong>Algunas veces</strong><small>Necesito mover tareas.</small></span></label>
+              <label class="choice-card"><input type="radio" name="scheduleConflict" value="high" /><span class="choice-mark">03</span><span class="choice-text"><strong>Con frecuencia</strong><small>Las obligaciones chocan con las clases.</small></span></label>
+            </div>
+          </fieldset>
+
+          <p id="form-error" class="form-error" role="alert" hidden>Elige una opción para continuar.</p>
+          <div class="form-actions">
+            <button id="back-button" class="button button--ghost" type="button" hidden>← Atrás</button>
+            <button id="next-button" class="button button--primary" type="button">Continuar <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </section>
+
+      <section id="result-screen" class="result-screen" aria-labelledby="result-title" aria-live="polite" hidden>
+        <div class="result-header">
+          <p class="section-kicker">Tu lectura de bienestar</p>
+          <h2 id="result-title">Tu resultado está listo</h2>
+          <p id="result-summary" class="result-summary"></p>
+        </div>
+
+        <div class="result-layout">
+          <article id="result-card" class="result-card">
+            <div class="signal-wrap">
+              <div id="signal-light" class="signal-light" aria-label="Nivel del semáforo">
+                <span class="signal-dot signal-dot--red"></span>
+                <span class="signal-dot signal-dot--yellow"></span>
+                <span class="signal-dot signal-dot--green"></span>
+              </div>
+              <div>
+                <p class="result-label">Nivel de orientación</p>
+                <p id="result-level" class="result-level"></p>
+              </div>
+            </div>
+            <div class="score-line"><span>Carga estimada</span><strong id="result-score"></strong></div>
+            <p id="result-warning" class="result-warning"></p>
+          </article>
+
+          <article class="support-card">
+            <p class="section-kicker">Lo que puede ayudarte</p>
+            <h3>Señales que tuvimos en cuenta</h3>
+            <ul id="factor-list" class="factor-list"></ul>
+            <div class="recommendation-box">
+              <span class="recommendation-icon" aria-hidden="true">✦</span>
+              <p id="recommendation-text"></p>
+            </div>
+          </article>
+        </div>
+
+        <p class="result-note">Este resultado es una orientación para organizar apoyos. No es un diagnóstico médico ni mide tu compromiso.</p>
+        <button id="restart-button" class="button button--secondary" type="button">Volver a empezar</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Yarú Rural · Economía del cuidado y permanencia formativa</p>
+      <p>Una herramienta de conversación para reconocer tu tiempo.</p>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
